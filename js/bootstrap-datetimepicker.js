@@ -583,7 +583,6 @@
             },
             isValidMinute = function(targetMoment) {
                 if (Number(targetMoment.format('h')) === enabledHrsArray.length - 1 && Number(targetMoment.format('m')) > 0) {
-                    console.log('returning false');
                     setValue(targetMoment.startOf('hour'));
                     return false
                 }
